@@ -1,0 +1,264 @@
+/* 
+  Name: Sara Filekovic
+  ID: 190302049
+  Course: CS412.1
+  Assignment: Project 2 - CSS
+  Due date: 5th November, 2021
+  */
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+/* variables */
+:root {
+  --site-font: 'Inter', sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 600;
+  --weight-bold: 800;
+  --mint-green: #ADFC92;
+  --cornflower-blue: #203D84;
+  --platinum: #E6E8E6;
+}
+
+/* universal styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--site-font);
+}
+
+h3 {
+  font-weight: var(--weight-medium);
+  font-size: 40px;
+  color: white;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+/* header and nav */
+header {
+  background-color: var(--mint-green);
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#resume {
+  line-height: 45px;
+}
+
+#resume > h1 {
+  font-weight: var(--weight-bold);
+}
+
+#resume > h2 {
+  font-weight: var(--weight-medium);
+  letter-spacing: 6px;
+}
+
+#resume > blockquote {
+  font-weight: var(--weight-medium);
+}
+
+nav {
+  font-weight: var(--weight-medium);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  margin: 10px;
+  list-style: none;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  letter-spacing: 3px;
+}
+
+a:hover {
+  font-weight: var(--weight-bold);
+  color: var(--cornflower-blue);
+}
+
+nav > ul > li {
+  padding-bottom: 5px;
+}
+
+/* about me section */
+#about {
+  background-color: var(--cornflower-blue);
+  padding-top: 80px;
+}
+
+#about-container {
+  padding-right: 100px;
+  padding-left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#about-img-div > img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 15px var(--platinum);
+  border-radius: 5px;
+}
+
+#about-p {
+  background-color: var(--platinum);
+  padding: 25px;
+  border-radius: 5px;
+  font-weight: var(--weight-medium);
+  width: fit-content;
+}
+
+/* education section */
+#education {
+  background-color: var(--cornflower-blue);
+  padding-top: 100px;
+}
+
+#education > table, th, td {
+  border: 2px solid var(--cornflower-blue);
+  border-collapse: collapse;
+  background-color: var(--platinum);
+  padding: 15px;
+}
+
+th {
+  background-color: var(--mint-green);
+}
+
+td {
+  font-weight: var(--weight-medium);
+  font-size: 14px;
+}
+
+#education > table {
+  width: 70%;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* skills section */
+#skills {
+  background-color: var(--cornflower-blue);
+  padding-top: 100px;
+}
+
+#skills > ul {
+  list-style: none;
+  text-align: center;
+  font-weight: var(--weight-medium);
+  background-color: var(--mint-green);
+  transform: skewY(182deg);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+#skills > ul > li {
+  padding-bottom: 5px;
+}
+
+.java-skills {
+  color: var(--cornflower-blue);
+  font-size: 18px;
+}
+
+#skills > h4 {
+  font-weight: var(--weight-medium);
+  color: white;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#skills > a > img {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+  /*padding-bottom: 30px;*/
+}
+
+/* interests section */
+#interests {
+  background-color: var(--cornflower-blue);
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+#interests > ul {
+  background-color: var(--mint-green);
+  list-style: none;
+  font-size: 25px;
+  margin: 0 auto;
+  transform: skewY(182deg);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+#interests > ul > li > i {
+  padding-right: 10px;
+  color: var(--cornflower-blue);
+  font-size: 15px;
+}
+
+/* contact section */
+#contact {
+  background-color: var(--platinum);
+}
+
+address {
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+#contact > h3 {
+  color: black;
+  font-size: 30px;
+  padding-bottom: 25px;
+}
+
+address > a {
+  color: var(--cornflower-blue);
+  font-weight: var(--weight-regular);
+}
+
+address > a > i {
+  font-size: 30px;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+

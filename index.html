@@ -13,14 +13,17 @@
     <title>HTML project</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <header>
+    <div id="resume">
     <h1>Resume</h1>
     <h2>Sara Filekovic</h2>
-    <blockquote><i>A smooth sea never made a skilled sailor.</i></blockquote>
-    <hr>
-    <div>
+    <blockquote><i>"A smooth sea never made a skilled sailor." - Franklin D. Roosevelt</i></blockquote>
+    </div>
+    <nav>
     <ul>
       <li>
         <a href="#about">About me</a>
@@ -38,13 +41,23 @@
         <a href="#contact">Contact</a>
       </li>
     </ul>
-    </div>
-    <hr>
+    </nav>
+    </header>
+
+    <!--About me section-->
+
     <div id="about">
       <h3>About me</h3>
-      <img src="images/rsz_pexels-riciardus-789382.jpg" alt="">
-      <p>My name is Sara Filekovic and I am a 3rd-year student of software engineering at <abbr title="International University of Sarajevo">IUS</abbr>. I was born in Sarajevo on 18<sup>th</sup> of April, 2000.<br> In my free time, I like to go swimming, read books and learn how to build cool websites.</p>
+      <div id="about-container">
+      <div id="about-img-div">
+      <img id="about-img" src="images/rsz_pexels-riciardus-789382_50.jpg" alt="">
+      </div>
+      <p id="about-p">My name is Sara Filekovic and I am a 3rd-year student of software engineering at <abbr title="International University of Sarajevo">IUS</abbr>.<br> I was born in Sarajevo on 18<sup>th</sup> of April, 2000.<br> In my free time, I like to go swimming, read books and learn how to build cool websites.</p>
+      </div>
     </div>
+
+    <!--Education section-->
+
     <div id="education">
       <h3>Education</h3>
       <table>
@@ -66,36 +79,50 @@
         </tbody>
       </table>
     </div>
+
+    <!--Skills section-->
+
     <div id="skills">
       <h3>Skills</h3>
-      <ol>
+      <ul>
         <li>HTML</li>
         <li>CSS</li>
-        <li>Java</li>
-        <ul>
-          <li>Object-oriented programming</li>
-          <li>Collections</li>
-          <li>GUIs</li>
-        </ul>
         <li>SQL</li>
-      </ol>
+        <li>Java:</li>
+          <li class="java-skills">Object-oriented programming</li>
+          <li class="java-skills">Collections</li>
+          <li class="java-skills">GUIs</li>
+      </ul>
       <h4>Click on the following image if you would like to learn HTML:</h4>
       <a href="https://www.w3schools.com/html/default.asp" target="_blank"><img src="images/imac-gac38b62ee_640.png" alt="devices" title="responsive-web-design"></a>
     </div>
+
+    <!--Interests section-->
+
     <div id="interests">
       <h3>Interests</h3>
       <ul>
-        <li>Front end development</li>
-        <li>Algorithms</li>
+        <li><i class="bi bi-heart-fill"></i>Front end development</li>
+        <li><i class="bi bi-heart-fill"></i>Algorithms</li>
+        <li><i class="bi bi-heart-fill"></i>Java programming</li>
       </ul>
     </div>
+
+    <!--Contact section-->
+
+    <footer>
     <div id="contact">
       <h3>Contact</h3>
       <address>
         Donja Luka bb, 71380 Ilijas, Bosnia and Herzegovina
-        <br>
+        <br><br>
         <a href="#">example@mail.com</a>
+        <br><br>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-github"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
       </address>
     </div>
+    </footer>
   </body>
 </html>
