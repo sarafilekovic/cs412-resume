@@ -99,6 +99,22 @@ nav > ul > li {
   padding-bottom: 5px;
 }
 
+.hamburger {
+  font-size: 2.3rem;
+  margin: 20px;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+
+.close-nav-btn {
+  font-size: 2.3rem;
+  margin: 20px;
+  cursor: pointer;
+  color: black;
+  display: none;
+}
+
 /* about me section */
 #about {
   background-color: var(--cornflower-blue);
@@ -112,6 +128,7 @@ nav > ul > li {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 }
 
 #about-img-div > img {
@@ -121,12 +138,25 @@ nav > ul > li {
   border-radius: 5px;
 }
 
+#js-functionality {
+  color: white;
+
+}
+
 #about-p {
   background-color: var(--platinum);
   padding: 25px;
   border-radius: 5px;
   font-weight: var(--weight-medium);
   width: fit-content;
+  position: absolute;
+  right: -1000px;
+}
+
+@keyframes slideInFromRight {
+  100% {
+    right: 100px;
+  }
 }
 
 /* education section */
@@ -142,8 +172,18 @@ nav > ul > li {
   padding: 15px;
 }
 
-th {
+#education > p {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.color-me {
   background-color: var(--mint-green);
+}
+
+.color-me-again {
+  background-color: seagreen;
 }
 
 td {
@@ -168,12 +208,31 @@ td {
   list-style: none;
   text-align: center;
   font-weight: var(--weight-medium);
-  background-color: var(--mint-green);
+  background: linear-gradient(238deg, #52dfbb, #df52d3, #e4afe0, #afbce4);
+  background-size: 400% 400%;
   transform: skewY(182deg);
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 50px;
   font-size: 25px;
+}
+
+@keyframes skillsAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#skills > p {
+  text-align: center;
+  padding: 30px;
+  color: white;
 }
 
 #skills > ul > li {
@@ -197,7 +256,7 @@ td {
   max-width: 80%;
   margin: 0 auto;
   display: block;
-  /*padding-bottom: 30px;*/
+  padding-bottom: 30px;
 }
 
 /* interests section */
@@ -226,6 +285,12 @@ td {
   font-size: 15px;
 }
 
+#interests > p {
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
 /* contact section */
 #contact {
   background-color: var(--platinum);
@@ -252,6 +317,59 @@ address > a {
 address > a > i {
   font-size: 30px;
   padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  #myNavbar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    background: white;
+    display: none;
+  }
+
+  #myNavbar > li {
+    margin: 5px;
+  }
+
+  nav .hamburger {
+    display: block;
+  }
+
+  nav #myNavbar .close-nav-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  #about-img-div {
+    display: none;
+  }
+
+  #about-p {
+    position: relative;
+    left: 20px;
+    right: 20px;
+    top: 10px;
+  }
+
+  #myNavbar > li > p {
+    display: none;
+  }
+
+  #js-functionality {
+    display: none;
+  }
+
 }
 
 
