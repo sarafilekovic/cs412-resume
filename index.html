@@ -19,7 +19,7 @@
   <body>
     <header>
     <div id="resume">
-    <h1>Resume</h1>
+    <h1 id="resume-h1">Resume</h1>
     <h2>Sara Filekovic</h2>
     <blockquote><i>"A smooth sea never made a skilled sailor." - Franklin D. Roosevelt</i></blockquote>
     </div>
@@ -28,9 +28,6 @@
         <i class="bi bi-list"></i>
       </div>
     <ul id="myNavbar">
-      <li>
-        <p>Hamburger menu functionality added on smaller screens.</p>
-      </li>
       <li>
         <a href="#about">About me</a>
       </li>
@@ -61,7 +58,6 @@
       <div id="about-img-div">
       <img id="about-img" src="images/rsz_pexels-riciardus-789382_50.jpg" alt="">
       </div>
-      <p id="js-functionality">When page is loaded, the div flies in from the right:</p>
       <p id="about-p">My name is Sara Filekovic and I am a 3rd-year student of software engineering at <abbr title="International University of Sarajevo">IUS</abbr>.<br> I was born in Sarajevo on 18<sup>th</sup> of April, 2000.<br> In my free time, I like to go swimming, read books and learn how to build cool websites.</p>
       </div>
     </div>
@@ -70,7 +66,6 @@
 
     <div id="education">
       <h3>Education</h3>
-      <p>On mouseover of the table headers, their color is changed:</p>
       <table>
         <thead>
         <tr>
@@ -95,7 +90,6 @@
 
     <div id="skills">
       <h3>Skills</h3>
-      <p>Linear gradient animation:</p>
       <ul id="skills-list">
         <li>HTML</li>
         <li>CSS</li>
@@ -105,6 +99,24 @@
           <li class="java-skills">Collections</li>
           <li class="java-skills">GUIs</li>
       </ul>
+      <ul class="accordion">
+        <li>
+          <button class="acc-control">HTML</button>
+          <div class="acc-panel">HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.</div>
+        </li>
+        <li>
+          <button class="acc-control">CSS</button>
+          <div class="acc-panel">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.</div>
+        </li>
+        <li>
+          <button class="acc-control">SQL</button>
+          <div class="acc-panel">SQL (Structured Query Language) is a standardized programming language that's used to manage relational databases and perform various operations on the data in them.</div>
+        </li>
+        <li>
+          <button class="acc-control">Java</button>
+          <div class="acc-panel">One of the most widely used programming languages, Java is used as the server-side language for most back-end development projects, including those involving big data and Android development. Java is also commonly used for desktop computing, other mobile computing, games, and numerical computing.</div>
+        </li>
+      </ul>
       <h4>Click on the following image if you would like to learn HTML:</h4>
       <a href="https://www.w3schools.com/html/default.asp" target="_blank"><img src="images/imac-gac38b62ee_640.png" alt="devices" title="responsive-web-design"></a>
     </div>
@@ -113,7 +125,6 @@
 
     <div id="interests">
       <h3>Interests</h3>
-      <p>With Javascript, 2nd item's text content from the list is changed:</p>
       <ul id="interests-ul">
         <li><i class="bi bi-heart-fill"></i>Front end development</li>
         <li id="changeMe"><i class="bi bi-heart-fill"></i>Algorithms</li>
@@ -137,6 +148,7 @@
       </address>
     </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

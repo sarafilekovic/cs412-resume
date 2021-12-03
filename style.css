@@ -138,11 +138,6 @@ nav > ul > li {
   border-radius: 5px;
 }
 
-#js-functionality {
-  color: white;
-
-}
-
 #about-p {
   background-color: var(--platinum);
   padding: 25px;
@@ -172,12 +167,6 @@ nav > ul > li {
   padding: 15px;
 }
 
-#education > p {
-  padding: 20px;
-  text-align: center;
-  color: white;
-}
-
 .color-me {
   background-color: var(--mint-green);
 }
@@ -204,7 +193,7 @@ td {
   padding-top: 100px;
 }
 
-#skills > ul {
+#skills > #skills-list {
   list-style: none;
   text-align: center;
   font-weight: var(--weight-medium);
@@ -227,12 +216,6 @@ td {
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-#skills > p {
-  text-align: center;
-  padding: 30px;
-  color: white;
 }
 
 #skills > ul > li {
@@ -259,6 +242,31 @@ td {
   padding-bottom: 30px;
 }
 
+#skills > .accordion {
+  list-style: none;
+  text-align: center;
+  font-weight: var(--weight-medium);
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.acc-control {
+  padding: 10px 20px;
+  width: 400px;
+  font-size: 20px;
+  border-radius: 0;
+  background-color: var(--mint-green);
+  cursor: pointer;
+}
+
+.acc-panel {
+  padding: 20px;
+  display: none;
+}
+
 /* interests section */
 #interests {
   background-color: var(--cornflower-blue);
@@ -283,12 +291,6 @@ td {
   padding-right: 10px;
   color: var(--cornflower-blue);
   font-size: 15px;
-}
-
-#interests > p {
-  padding: 30px;
-  text-align: center;
-  color: white;
 }
 
 /* contact section */
@@ -360,14 +362,6 @@ address > a > i {
     left: 20px;
     right: 20px;
     top: 10px;
-  }
-
-  #myNavbar > li > p {
-    display: none;
-  }
-
-  #js-functionality {
-    display: none;
   }
 
 }
